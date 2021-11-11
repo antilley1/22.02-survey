@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="22.02.02_survey.css">
+</head>
+<body>
+    <h1 id="title" class="title">
+        Pokemon Survey
+    </h1>
+
+    <p id="description" class="description">
+        This survey is to hear your preferences and experiences with Pokemon!
+    </p>
+    
+    <div class="form-div">
+        <form id="survey-form">
+            <div class="information">
+                <div class="name-label">
+                    <label id="name-label" for="name">Name</label>
+                </div>
+                <div class="name-input">
+                    <input type="text" id="name" placeholder="Name" required>
+                </div>
+                <div class="email-label">
+                    <label id="email-label" for="email">Email</label>
+                </div>
+                <div class="email-input">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="age-label">
+                    <label id="number-label" for="number">Age</label>
+                </div>
+                <div class="age-input">
+                    <input type="number" id="number" min="0" max="150" placeholder="Age">
+                </div>
+            </div>
+
+            <div class="dropdown-div">
+                <h2 class="dropdown-title">
+                    Who's your favorite Starter?
+                </h2>
+                <div class="dropdown">
+                    <select id="dropdown">
+                        <option value="Bulbasaur">Bulbasaur</option>
+                        <option value="Charmander">Charmander</option>
+                        <option value="Squirtle">Squirtle</option>
+                        <option value="Chikorita">Chikorita</option>
+                        <option value="Cyndaquil">Cyndaquil</option>
+                        <option value="Totodile">Totodile</option>
+                        <option value="Treecko">Treecko</option>
+                        <option value="Torchic">Torchic</option>
+                        <option value="Mudkip">Mudkip</option>
+                        <option value="Turtwig">Turtwig</option>
+                        <option value="Chimchar">Chimchar</option>
+                        <option value="Piplup">Piplup</option>
+                        <option value="Snivy">Snivy</option>
+                        <option value="Tepig">Tepig</option>
+                        <option value="Oshawott">Oshawott</option>
+                        <option value="Chespin">Chespin</option>
+                        <option value="Fennekin">Fennekin</option>
+                        <option value="Froakie">Froakie</option>
+                        <option value="Rowlett">Rowlett</option>
+                        <option value="Litten">Litten</option>
+                        <option value="Popplio">Popplio</option>
+                        <option value="Grookey">Grookey</option>
+                        <option value="Scorbunny">Scorbunny</option>
+                        <option value="Sobble">Sobble</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="favorite-gen-div">
+                <h2 class="favorite-gen-title">
+                    Which Generation is your favorite?
+                </h2>
+                <div class="favorite-gen-options">
+                    <div class="fgo1">
+                        <input type="radio" id="gen-I" value="Gen I" name="gen_favorite">
+                        <label id="gen-I-label" for="gen-I">Gen I</label>
+                    </div>
+                    <div class="fgo2">
+                        <input type="radio" id="gen-II" value="Gen II" name="gen_favorite">
+                        <label id="gen-II-label" for="gen-II">Gen II</label>
+                    </div>
+                    <div class="fgo3">
+                        <input type="radio" id="gen-III" value="Gen III" name="gen_favorite">
+                        <label id="gen-III-label" for="gen-III">Gen III</label>    
+                    </div>
+                    <div class="fgo4">
+                        <input type="radio" id="gen-IV" value="Gen IV" name="gen_favorite">
+                        <label id="gen-IV-label" for="gen-IV">Gen IV</label>    
+                    </div>
+                    <div class="fgo5">
+                        <input type="radio" id="gen-V" value="Gen V" name="gen_favorite">
+                        <label id="gen-V-label" for="gen-V">Gen V</label>    
+                    </div>
+                    <div class="fgo6">
+                        <input type="radio" id="gen-VI" value="Gen VI" name="gen_favorite">
+                        <label id="gen-VI-label" for="gen-VI">Gen VI</label>    
+                    </div>
+                    <div class="fgo7">
+                        <input type="radio" id="gen-VII" value="Gen VII" name="gen_favorite">
+                        <label id="gen-VII-label"for="gen-VII">Gen VII</label>    
+                    </div>
+                    <div class="fgo8">
+                        <input type="radio" id="gen-VIII" value="Gen VIII" name="gen_favorite">
+                        <label id="gen-VIII-label" for="gen-VIII">Gen VIII</label>    
+                    </div>
+                </div>
+            </div>
+
+            <div class="gens-played-div">
+                <h2 class="gens-played-title">
+                    Which Generations have you played?
+                </h2>
+                <div class="gens-played-options">
+                    <div class="gpo1">
+                        <input type="checkbox" id="gen-I-checkbox" value="Gen I" name="gen_played">
+                        <label id="gen-I-label-checkbox" for="gen-I-checkbox">Gen I</label>
+                    </div>
+                    <div class="gpo2">
+                        <input type="checkbox" id="gen-II-checkbox" value="Gen II" name="gen_played">                  
+                        <label id="gen-II-label-checkbox" for="gen-II-checkbox">Gen II</label>    
+                    </div>
+                    <div class="gpo3">
+                        <input type="checkbox" id="gen-III-checkbox" value="Gen III" name="gen_played">
+                        <label id="gen-III-label-checkbox" for="gen-III-checkbox">Gen III</label>    
+                    </div>
+                    <div class="gpo4">
+                        <input type="checkbox" id="gen-IV-checkbox" value="Gen IV" name="gen_played">
+                        <label id="gen-IV-label-checkbox" for="gen-IV-checkbox">Gen IV</label>    
+                    </div>
+                    <div class="gpo5">
+                        <input type="checkbox" id="gen-V-checkbox" value="Gen V" name="gen_played">
+                        <label id="gen-V-label-checkbox" for="gen-V-checkbox">Gen V</label>    
+                    </div>
+                    <div class="gpo6">
+                        <input type="checkbox" id="gen-VI-checkbox" value="Gen VI" name="gen_played">
+                        <label id="gen-VI-label-checkbox" for="gen-VI-checkbox">Gen VI</label>    
+                    </div>
+                    <div class="gpo7">
+                        <input type="checkbox" id="gen-VII-checkbox" value="Gen VII" name="gen_played">
+                        <label id="gen-VII-label-checkbox" for="gen-VII-checkbox">Gen VII</label>    
+                    </div>
+                    <div class="gpo8">
+                        <input type="checkbox" id="gen-VIII-checkbox" value="Gen VIII" name="gen_played">
+                        <label id="gen-VIII-label-checkbox" for="gen-VIII-checkbox">Gen VIII</label>    
+                    </div>
+                </div>
+            </div>
+
+            <div class="feedback">
+                <textarea>
+                    Additional thoughts?
+                </textarea>
+            </div>
+
+            <button id="submit" type="submit" value="submit">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+</html>

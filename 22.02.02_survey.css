@@ -1,0 +1,122 @@
+:root {
+    --blue-sapphire: #086788ff;
+    --blue-green: #07a0c3ff;
+    --jonquil: #f0c808ff;
+    --papaya-whip: #fff1d0ff;
+    --maximum-red: #dd1c1aff;
+}
+
+body {
+  color: var(--blue-sapphire);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://assets.pokemon.com//assets/cms2/img/misc/virtual-backgrounds/sword-shield/pokemon-in-the-wild.png);
+  background-size: 100% 100%;
+}
+
+.title {
+  background-color: white;
+  margin: 10vw;
+  text-align: center;
+  border-radius: .5em;
+  margin-bottom: 0%;
+  margin-top: 1em;
+  opacity: 90%;
+}
+
+.description {
+  text-align: center;
+}
+
+.form-div {
+  background-color: white;
+  margin: .5em 10%;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 85%;
+  position: relative;
+}
+
+.information {
+  display: grid;
+  margin-top: 1em;
+  grid-template-columns: 1fr min-content min-content 1fr;
+  grid-template-rows: repeat(3, 2em);
+  column-gap: 1em;
+  grid-template-areas: 
+  ". a b ."
+  ". c d ."
+  ". e f .";
+  /**border: solid var(--maximum-red);**/
+}
+
+/**
+.name-label, .name-input, 
+.email-label, .email-input, 
+.age-label, .age-input {
+  border: solid var(--blue-sapphire);
+}
+**/
+
+.name-label {
+  grid-area: a;
+}
+.name-input {
+  grid-area: b;
+}
+.email-label {
+  grid-area: c;
+}
+.email-input {
+  grid-area: d;
+}
+.age-label {
+  grid-area: e;
+}
+.age-input {
+  grid-area: f;
+}
+
+.dropdown-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.favorite-gen-div, .gens-played-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.favorite-gen-title, .gens-played-title {
+  text-align: center;
+}
+
+.favorite-gen-options, .gens-played-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.fgo1, .fgo2, .fgo3, .fgo4, .fgo5, .fgo6, .fgo7, .fgo8, 
+.gpo1, .gpo2, .gpo3, .gpo4, .gpo5, .gpo6, .gpo7, .gpo8 {
+  display: flex;
+  gap: .5em;
+}
+
+.feedback {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+#submit {
+  position:absolute;
+  bottom: 2em;
+  right: 2em;
+}
+
